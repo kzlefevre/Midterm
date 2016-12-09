@@ -1,0 +1,32 @@
+
+
+.jbackground{
+    background-color: dimgray;
+}
+
+.navbarcolor{
+    background-color: whitesmoke;
+}
+
+.big{
+    font-size: 200%;
+    color: #ebebeb;
+}
+.crazyfont{
+    font-family: 'Molle', cursive;
+    
+}
+
+body{
+    font-family: 'Cuprum', sans-serif;
+    background-color: whitesmoke;
+}
+.carouselIMG{
+    background-image: url("https://fedora.digitalcommonwealth.org/fedora/objects/commonwealth:x920fw86z/datastreams/access800/content")
+}
+
+
+
+.divtrans1{
+    opacity: 0.5;
+}
