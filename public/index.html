@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="JamSession" lang="en">
+<head>
+    
+<!--   Google Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    
+<!--  favicon  -->
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAABzc3MAAAAAAIODgwB8fHwAdXV1AG5ubgB+fn4Ad3d3AHl5eQBycnIAe3t7AH19fQB2dnYAeHh4AHFxcQB6enoAERERERERERERERSKERERERERy3fXERERERF2d3xxEREREXlBEHcRERERFzER9xERERERcBF7cREREREXd5dxEREREREXcnEREREREREQlxERERERERH3EREREXdxEfcRERER23ERRxERERF6ERfXEREREReN5lERERERERERERH//wAA+P8AAPA/AADwHwAA8Y8AAPnPAAD8xwAA/gcAAP+HAAD/4wAA//MAAPxzAAD8cwAA/OMAAP4HAAD//wAA" rel="icon" type="image/x-icon" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>JamSession</title>
+    
+<!--   Bootstrap CSS   -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    
+<!--   My CSS -->
+<link rel="stylesheet" href="/main.css">
+  
+<!--   Header   -->
+</head>
+<body ng-controller="jamTime as jCtrl">
+    <div class="navbar navbar-default navbar-fixed-top navbarcolor">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#/" class="navbar-brand crazyfont">JamSession</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="divider"></li>
+            <li>
+              <a href="#/signup" target="" >Sign Up</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/profilepage" >Profile</a></li>
+            <li><a href="" >About</a></li>
+            <li><a href="" >Features</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    
+
+
+<ng-view>
+    <!--   THIS is where our templates will be injected into.  It's the view hole in our view-finder   -->
+</ng-view>
+
+
+<br>
+<br>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right navbar-brand"><a href="">  Back to top </a></p>
+        <p>© 2016 JamSession LLC · <a href="">Feedback</a> · <a href="">Contact</a></p>
+      </footer>
+
+   
+
+
+<!-- JS sources at end to run faster -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-animate.js"></script>
+  <script src="/main.js"></script>
+
+
+
+
+</html>

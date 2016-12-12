@@ -1,0 +1,81 @@
+<!-- 
+
+<div class="container">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3>Joe Sixpack</h3>
+        <em>click my face for more</em>
+		</center>
+    </div>
+    
+	
+	
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle">
+                    <h3 class="media-heading">Joe Smalls <small>Denver, CO</small></h3>
+                    <span><strong>Skills: </strong></span>
+                        <span class="label label-success">Guitar</span>
+                        <span class="label label-info">Bass</span>
+                        <span class="label label-info">Drums</span>
+                        <span class="label label-warning">Vocals</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default" href="#/connect">Connect</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="row">
+ -->
+
+
+<br><br>
+<div class="container-fluid well span6" ng-repeat="thing in jCtrl.userInfo">
+	<div class="row-fluid">
+        <div class="span2" >
+		    <img src="https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm" class="img-circle">
+        </div>
+        
+        <div class="span8">
+            <h3>User Name</h3>
+            <h6>Email: MyEmail@servidor.com</h6>
+            <h6>Ubication: Colombia</h6>
+            <h6>Old: 1 Year</h6>
+            <h6><a href="#">More... </a></h6>
+        </div>
+        
+        <div class="span2">
+            <div class="btn-group">
+                <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
+                    Action 
+                    <span class="icon-cog icon-white"></span><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><button href="#"><span class="icon-wrench"></span> Modify</a></li>
+                    <li><button href="#"><span class="icon-trash"></span> Delete</a></li>
+                </ul>
+            </div>
+        </div>
+</div>
+</div>
