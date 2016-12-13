@@ -28,6 +28,7 @@ function Router ($routeProvider) {
  
     .when('/profilepage', {
       templateUrl   : '/profilepage.html',
+    //  controller    : "jCtrl.saveUser()"
     })
     .when('/connect', {
       templateUrl   : '/connect.html',
@@ -39,8 +40,6 @@ function Router ($routeProvider) {
 //       templateUrl   : '/login.html',
 //     })
 }
-
-
 
 
 
@@ -62,8 +61,21 @@ function userCtrl (userFactory, $location) {
     
     //    
    jCtrl.saveUser = function (){
-       $location.url("/profile");
+       userFactory.userdata.push(jCtrl.newUser)
+       userFactory.currentUser = jCtrl.newUser
+       $location.url("/profilepage");
    }
+   jCtrl.connectUser = function (){
+       $location.url("/connect");
+   }
+/*   
+    jCtrl.addUser = function(){
+    jCtrl.userFactory.push(jCtrl.newUser); 
+     // Take the object newUser that came from ngModel and push it into the collectibles array
+     // this will reset the form AND create a new object
+  }
+*/
+   jCtrl.newUser = {};
 }
 
 
@@ -80,6 +92,30 @@ angular.module("JamSession")
 function mainuserFactory () {
   var userInfo = [
     {
+      fn : "Kevin",
+      ln : "LeFevre",
+      email: "kevin.lefevre@gmail.com",
+      instrument: "Guitar",
+      zipcode: 80526,
+      host: "Yes",
+      othersplay: "No",
+      genre1: "Blues",
+      genre2: "Indie",
+      genre3: "Rock",
+    },
+       {
+      fn : "",
+      ln : "",
+      email: "",
+      instrument: "",
+      zipcode: "",
+      host: "",
+      othersplay: "",
+      genre1: "",
+      genre2: "",
+      genre3: "",
+    },
+       {
       fn : "",
       ln : "",
       email: "",

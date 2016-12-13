@@ -55,26 +55,105 @@
 	<div class="row-fluid">
         <div class="span2" >
 		    <img src="https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm" class="img-circle">
+			<br>
+			<br>
         </div>
         
-        <div class="span8">
-            <h3>User Name</h3>
-            <h6>Email: MyEmail@servidor.com</h6>
-            <h6>Ubication: Colombia</h6>
-            <h6>Old: 1 Year</h6>
-            <h6><a href="#">More... </a></h6>
+       <div class="span8">
+		   
+		<h3 class="media-heading">{{thing.fn}} {{thing.ln}}  :  
+			<medium>{{thing.zipcode}}</medium></h3>
+            <span><strong>Skills: </strong></span>
+                        <span class="label label-success">{{thing.instrument}}</span>
+<!--                    <span class="label label-info">Bass</span>
+                        <span class="label label-info">Drums</span>
+                        <span class="label label-warning">Vocals</span> -->
+            <h3>{{thing.email}}</h3>
+            <h4>Can I host a JamSession? :  {{thing.host}}</h4>
+            <h4>Do I have instruments for others to play? :  {{thing.othersplay}}</h4>
+            <h4>{{thing.genre1}}</h4>
+		    <h4>{{thing.genre2}}</h4>
+            <h4>{{thing.genre3}}</h4>
+
+<!-- 			<ul class="list-group">
+ 			 <a class="list-group-item" ng-model="jCtrl.userInfo.fn"></a>
+ 			 <li class="list-group-item" ng-model="jCtrl.userInfo.ln">Dapibus ac facilisis in</li>
+  			 <li class="list-group-item" ng-model="jCtrl.userInfo.fn">Morbi leo risus</li>
+  			 <li class="list-group-item" ng-model="jCtrl.userInfo.fn">Porta ac consectetur ac</li>
+ 			 <li class="list-group-item" ng-model="jCtrl.userInfo.fn">Vestibulum at eros</li>
+			</ul>
+			      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-sm-3 control-label">First name:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.fn">
+          </div>
         </div>
-        
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Last name:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.ln">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Email:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Instrument:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.instrument">
+          </div>
+        </div>
+       
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Zipcode:</label>
+          <div class="col-sm-8">
+            <input class="form-control data-bv-zipcode-message" pattern="[0-9]{0,5}" value="" type="text" ng-model="jCtrl.userInfo.zipcode">
+          </div>
+        </div>
+          <div class="form-group">
+          <label class="col-sm-3 control-label">Host:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.host">
+          </div>
+        </div>
+          <div class="form-group">
+          <label class="col-sm-3 control-label">Extra Instruments:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.othersplay">
+          </div>
+        </div>
+       <div class="form-group">
+          <label class="col-sm-3 control-label">Genre 1:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.genre1">
+          </div>
+        </div>
+           <div class="form-group">
+          <label class="col-sm-3 control-label">Genre 2:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.genre2">
+          </div>
+        </div>
+           <div class="form-group">
+          <label class="col-sm-3 control-label">Genre 3:</label>
+          <div class="col-sm-8">
+            <input class="form-control" value="" type="text" ng-model="jCtrl.userInfo.genre3">
+          </div>
+        </div>
+
+      </form>
+
+        </div>
+         -->
         <div class="span2">
             <div class="btn-group">
-                <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
-                    Action 
-                    <span class="icon-cog icon-white"></span><span class="caret"></span>
+                <a class="btn btn-info" href="">Jam Together
                 </a>
-                <ul class="dropdown-menu">
-                    <li><button href="#"><span class="icon-wrench"></span> Modify</a></li>
-                    <li><button href="#"><span class="icon-trash"></span> Delete</a></li>
-                </ul>
+
             </div>
         </div>
 </div>

@@ -11,7 +11,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="fn">First name</label>  
   <div class="col-md-4">
-  <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-lg" required="" ng-model="jCtrl.userInfo.fn">
+  <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-md" required="" ng-model="jCtrl.newUser.fn">
     
   </div>
 </div>
@@ -20,7 +20,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="ln">Last name</label>  
   <div class="col-md-4">
-  <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-lg" required="" ng-model="jCtrl.userInfo.ln">
+  <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-md" required="" ng-model="jCtrl.newUser.ln">
     
   </div>
 </div>
@@ -30,7 +30,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="email">Email</label>  
   <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="email" class="form-control input-lg" required="" ng-model="jCtrl.userInfo.email">
+  <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" required="" ng-model="jCtrl.newUser.email">
     
   </div>
 </div>
@@ -39,7 +39,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="instrument">Instrument</label>  
   <div class="col-md-4">
-  <input id="instrument" name="instrument" type="text" placeholder="" class="form-control input-lg" required="" ng-model="jCtrl.userInfo.instrument">
+  <input id="instrument" name="instrument" type="text" placeholder="" class="form-control input-md" required="" ng-model="jCtrl.newUser.instrument">
     
   </div>
 </div>
@@ -50,7 +50,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="zipcode">Zip Code</label>  
   <div class="col-md-4">
-  <input id="zipcode" name="zipcode" type="text" placeholder="Zip Code" class="form-control input-lg" required="" ng-model="jCtrl.userInfo.zipcode">
+  <input id="zipcode" pattern="[0-9]{0,5}" name="zipcode" type="text" placeholder="Zip Code" class="form-control input-md" required="" ng-model="jCtrl.newUser.zipcode">
     
   </div>
 </div>
@@ -61,11 +61,11 @@
   <label class="col-md-4 control-label" for="host">Do you have a place to host a JamSession?</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="host-0">
-      <input type="radio" name="host" id="host-0" value="true" checked="checked" ng-model="jCtrl.userInfo.host">
+      <input type="radio" name="host" id="host-0" value="true" checked="checked" ng-model="jCtrl.newUser.host">
       Yes
     </label> 
     <label class="radio-inline" for="host-1">
-      <input type="radio" name="host" id="host-1" value="false" ng-model="jCtrl.userInfo.host">
+      <input type="radio" name="host" id="host-1" value="false" ng-model="jCtrl.newUser.host">
       No
     </label>
   </div>
@@ -77,11 +77,11 @@
   <label class="col-md-4 control-label" for="othersplay">Do you have extra instrument for others to play?</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="othersplay-0">
-      <input type="radio" name="othersplay" id="othersplay-0" value="true" checked="checked" ng-model="jCtrl.userInfo.othersplay">
+      <input type="radio" name="othersplay" id="othersplay-0" value="true" checked="checked" ng-model="jCtrl.newUser.othersplay">
       Yes
     </label> 
     <label class="radio-inline" for="othersplay-1">
-      <input type="radio" name="othersplay" id="othersplay-1" value="false" ng-model="jCtrl.userInfo.othersplay">
+      <input type="radio" name="othersplay" id="othersplay-1" value="false" ng-model="jCtrl.newUser.othersplay">
       No
     </label>
   </div>
@@ -91,7 +91,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="genre1">Genre 1</label>
   <div class="col-md-4">
-    <select id="genre1" name="genre1" class="form-control input-lg" ng-model="jCtrl.userInfo.genre1">
+    <select id="genre1" name="genre1" class="form-control input-md" ng-model="jCtrl.newUser.genre1">
         <option></option>
         <option>Alternative</option>
         <option>Blues</option>
@@ -119,7 +119,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="genre2">Genre 2</label>
   <div class="col-md-4">
-    <select id="genre2" name="genre2" class="form-control input-lg" ng-model="jCtrl.userInfo.genre2">
+    <select id="genre2" name="genre2" class="form-control input-md" ng-model="jCtrl.newUser.genre2">
         <option></option>
         <option>Alternative</option>
         <option>Blues</option>
@@ -147,7 +147,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="genre3">Genre 3</label>
   <div class="col-md-4">
-    <select id="genre3" name="genre3" class="form-control input-lg" ng-model="jCtrl.userInfo.genre3">
+    <select id="genre3" name="genre3" class="form-control input-md" ng-model="jCtrl.newUser.genre3">
         <option></option>
         <option>Alternative</option>
         <option>Blues</option>
@@ -176,7 +176,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button ng-click="jCtrl.saveUser()" id="submit" name="submit" class="btn btn-primary">SUBMIT AND CONTINUE</button>
+    <button ng-click="jCtrl.saveUser()" id="submit" name="submit"  class="btn btn-primary">SUBMIT AND CONTINUE</button>
   </div>
 </div>
 
